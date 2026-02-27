@@ -4,7 +4,7 @@ import edu.up.mateo.editor.model.Coords;
 import java.awt.image.BufferedImage;
 
 public interface GuiEditor {
-    // Update the image that is shwon
+    // Update the image that is shown
     void updateImage(BufferedImage img);
 
     // Get the coords of the rectangle to edit
@@ -15,4 +15,7 @@ public interface GuiEditor {
 
     // Error message
     void showError(String message);
+
+    // Update the image dimensions on the status bar
+    void updateImageInfo(int width, int height);
 }
